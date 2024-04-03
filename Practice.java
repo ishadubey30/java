@@ -2,19 +2,27 @@ import java.util.Scanner;
 
 public class Practice {
 
-    public static void main(String[] args){
-        System.out.println("Hello world");
+    public static void main(String[] args) {
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Enter an integer: ");
+        // int number = scanner.nextInt();
+        // System.out.println("Enter your name: ");
+        // scanner.nextLine(); 
+        // String name = scanner.nextLine();
+        // System.out.println("You entered: " + number + " and your name is " + name);
+        // ;  // Good practice to close resources
 
-        // int a = 1;
-        // int b = 4;
-        // int c = 6;
-        // int sum = a + b + c;
-        // System.out.println(sum);
-
-        Scanner Sc = new Scanner(System.in);
-        System.out.println("Enter m : ");
-        int m = Sc.nextInt();
-        
-        Sc.close(); 
-    }    
+        Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()) {
+        if (scanner.hasNextInt()) {
+        int number = scanner.nextInt();
+        System.out.println("You entered an integer: " + number);
+        } else {
+        String nonNumber = scanner.next();
+        System.out.println("Not an integer: " + nonNumber);
+        }
 }
+scanner.close();
+    }
+}
+
