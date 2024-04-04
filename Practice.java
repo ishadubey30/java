@@ -12,17 +12,22 @@ public class Practice {
         // System.out.println("You entered: " + number + " and your name is " + name);
         // ;  // Good practice to close resources
 
-        Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-        if (scanner.hasNextInt()) {
-        int number = scanner.nextInt();
-        System.out.println("You entered an integer: " + number);
-        } else {
-        String nonNumber = scanner.next();
-        System.out.println("Not an integer: " + nonNumber);
-        }
-}
-scanner.close();
+//         Scanner scanner = new Scanner(System.in);
+//         while (scanner.hasNext()) {
+//         if (scanner.hasNextInt()) {
+//         int number = scanner.nextInt();
+//         System.out.println("You entered an integer: " + number);
+//         } else {
+//         String nonNumber = scanner.next();
+//         System.out.println("Not an integer: " + nonNumber);
+//         }
+// }
+        // float a = 7/4f * 9/4f;
+        // System.out.println(a);
+        char Grade = 'A'  ;
+        char Grade1 = (char)('A' + 8);
+        System.out.println(Grade1);
+            // scanner.close();
     }
 }
 
