@@ -16,10 +16,20 @@ public class Palindrome {
         //     System.out.println("not a palindrome");
         // }
 
-        for(int i=0; i<=4 ; i++){
-            String a = "*".repeat(i);
-          
-            System.out.println(a);
+        // for(int i=0; i<=4 ; i++){
+        //     for (int j = 4 ; j>i ; j--){
+        //   System.out.print("*");
+        // }
+        //     System.out.println();
+        // }
+
+        int n = 5;
+        int fact = 1 ;
+        for(int i=1; i<=n; i++){
+             fact *= i;
+             System.out.println(fact);
+
         }
+        // System.out.println(fact);
     }
 }
