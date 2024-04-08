@@ -59,19 +59,28 @@ public class loops {
         //     System.out.println();
         // }
     
-        int [] arr = {1,2,3,4,5};
-        int [] arr2 = new int [2 * arr.length];
-        for(int i = 0 ; i < arr.length ; i++){
-            // arr2[i] += arr[i];
-            arr2[i] = arr[i];
-            arr2[i + arr.length] = arr[i];
-            System.out.println(arr2[i]);
+        // int [] arr = {1,2,3,4,5};
+        // int [] arr2 = new int [2 * arr.length];
+        // for(int i = 0 ; i < arr.length ; i++){
+        //     // arr2[i] += arr[i];
+        //     arr2[i] = arr[i];
+        //     arr2[i + arr.length] = arr[i];
+        //     System.out.println(arr2[i]);
             
-        }
-        for (int i = 0; i < arr2.length; i++) {
-            System.out.print(arr2[i] + " ");
-        }
+        // }
+        // for (int i = 0; i < arr2.length; i++) {
+        //     System.out.print(arr2[i] + " ");
+        // }
     
+        int num = 38;
+        while(num >= 10){
+            int sum = 0;
+            while(num > 0) {
+                sum += num % 10;
+                num /= 10;
+            } num = sum;
+            }
+            System.out.println(num);
 
 
     }
