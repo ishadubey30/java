@@ -45,20 +45,34 @@ public class loops {
         // }
      
 
-        int n = 6;
-        int start = 1 ;
-        for(int i = 0 ; i<=n ; i++){
+        // int n = 6;
+        // int start = 1 ;
+        // for(int i = 0 ; i<=n ; i++){
 
-            if(i%2 == 0 ) start = 1;
-            else start = 0;
+        //     if(i%2 == 0 ) start = 1;
+        //     else start = 0;
 
-            for(int j=0;j<=i;j++){
-                System.out.print(start);
-                start = 1-start;
-            }
-            System.out.println();
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print(start);
+        //         start = 1-start;
+        //     }
+        //     System.out.println();
+        // }
+    
+        int [] arr = {1,2,3,4,5};
+        int [] arr2 = new int [2 * arr.length];
+        for(int i = 0 ; i < arr.length ; i++){
+            // arr2[i] += arr[i];
+            arr2[i] = arr[i];
+            arr2[i + arr.length] = arr[i];
+            System.out.println(arr2[i]);
+            
         }
-        
+        for (int i = 0; i < arr2.length; i++) {
+            System.out.print(arr2[i] + " ");
+        }
+    
+
 
     }
 }
