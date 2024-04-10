@@ -72,15 +72,29 @@ public class loops {
         //     System.out.print(arr2[i] + " ");
         // }
     
-        int num = 38;
-        while(num >= 10){
-            int sum = 0;
-            while(num > 0) {
-                sum += num % 10;
-                num /= 10;
-            } num = sum;
-            }
-            System.out.println(num);
+        // int num = 38;
+        // while(num >= 10){
+        //     int sum = 0;
+        //     while(num > 0) {
+        //         sum += num % 10;
+        //         num /= 10;
+        //     } num = sum;
+        //     }
+        //     System.out.println(num);
+
+        
+        switch (3) {
+            case 2: System.out.println("hy");
+                
+                break;
+            case 4:
+                System.out.println("bye");
+                break;
+        
+            default:
+            System.out.println("nothing");
+                break;
+        }
 
 
     }
