@@ -83,18 +83,46 @@ public class loops {
         //     System.out.println(num);
 
         
-        switch (3) {
-            case 2: System.out.println("hy");
+        // switch (3) {
+        //     case 2: System.out.println("hy");
                 
-                break;
-            case 4:
-                System.out.println("bye");
-                break;
+        //         break;
+        //     case 4:
+        //         System.out.println("bye");
+        //         break;
         
-            default:
-            System.out.println("nothing");
-                break;
+        //     default:
+        //     System.out.println("nothing");
+        //         break;
+        // }
+
+        // for(int i = 0 ; i<5 ; i++){
+
+
+        //     for( int j = 1 ; j<=i ; j++){
+        //         System.out.print(j);
+        //     }
+           
+        //     System.out.println();
+        // }
+
+        int n = 5;
+        for (int i = 0; i < n * 2; i++) {
+            if (i> n) {
+                for (int j = 1; j <= 2* n - i; j++) {
+                    System.out.print("* ");
+                }
+               
+            } else {
+                for (int j = 0  ; j< i ; j++) {
+                    System.out.print("* ");
+                }     
+            }
+            System.out.println();
+            
         }
+
+
 
 
     }
